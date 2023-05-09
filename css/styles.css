@@ -1,1 +1,209 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Lato', sans-serif;
+    box-sizing: border-box;}
+.wrapper{
+    width: 1024px;
+    margin: 0 auto;}
+
+/*PROMO BANNER*/
+a, input[type=submit]{
+    font-weight: 800;}
+.promo-banner{
+    background: teal;
+    color: white;
+    text-align: center;
+    padding: .75em;}
+.promo-banner a{
+    color: white;
+    font-weight: 800;}
+/*END OF PROMO BANNER*/
+
+/*nav{ is parent container to the logo and navigation 
+links so display flex and flex-direction arranges 
+elements horizontally*/
+nav{
+    display: flex;
+    flex-direction: row;
+    padding: 0 2em;
+    border: 1px solid silver;
+    align-items: center;}
+nav, footer{
+    box-shadow: 1px 5px 5px silver;}
+nav .logo{
+    flex: 1;/*logo will take 1 unit of available space
+             in comparison to navigation links*/
+    margin-right: 80px;}
+
+/*navigation links are vertical right now.
+nav ul{ is parent to li so it too needs
+display flex and flex-direction to arrange
+elements horizontally.*/
+nav ul{
+    display: flex;
+    flex-direction: row;
+    flex: 4;}/*navigation will take 4x space more than logo*/
+nav ul li{
+    list-style-type: none;
+    flex: 1;/*4x space of logo will be evenly divided*/
+    text-align: center;/*centers navigation links*/
+    height: 30px;
+    line-height: 30px;}
+nav ul li a{
+    color: black;
+    font-weight: 800;
+    text-decoration: none;}
+.logo img{
+    max-width: 100%;}
+.hero-container{
+    position: relative;
+    height: 700px;}
+.hero{
+    width: 100%;
+    height: 100%;}
+.hero-container article{
+    position: absolute;
+    width: 100%;
+    top: 90%;
+    background-color: rgb(0, 0, 0, .6);
+    color: white;
+    padding: 20px 0;
+    border: 1px solid black;
+    text-align: left;}
+article h2 a{
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    padding: 1em 0 1em 1em;
+    margin: 0 0 0 10px;}
+footer{
+    background-color: teal;
+    color: white;
+    text-align: center;
+    padding: .75em;}
+.shop-group{
+    display: flex;
+    justify-content: space-between;}
+.shop-group div{
+    width: 30%;}
+.shop-group div img{
+    width: 100%;
+    margin: 20px auto 0 auto;}
+.shop-group a{
+    background: teal;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    padding: 1em 1em;
+    display: block;}
+
+/*NEWSLETTER*/
+.newsletter{
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 2em 2em;
+    margin: 20px 0;}
+.newsletter h2{
+    margin-bottom: 15px;}
+input[type=text], input[type=submit]{
+    width: 50%;
+    padding: 12px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;}
+input[type=submit]{
+    background-color: teal;
+    color: white;
+    border: none;
+    font-size: medium;}
+/*END OF INDEX SECTION*/
+
+
+/*COFFEE SECTION*/
+.light-roast-group, .medium-roast-group, .dark-roast-group{
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+    padding: 0 2em 1em 2em;}
+.store-container h2{
+    margin-top: 3%;
+    padding: 0 1.25em;}
+.store-container img{
+    max-width: 100%;}
+/*END OF COFFEE SECTION*/
+
+
+/*GEAR SECTION*/
+.brew-group, .mugs-group, .gift-cards-group{
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+    padding: 0 2em 1em 2em;}
+.gear-container h2{
+    margin-top: 3%;
+    padding: 0 1.25em;}
+.gear-container img{
+    max-width: 100%;}
+/*END OF GEAR SECTION*/
+
+
+/*LCOATION SECTION*/
+.location-container{
+    width: 100%;
+    padding: 2em 2em;
+    display: flex;
+    justify-content: space-between;}
+.location-container table{
+    text-align: right;
+    padding-top: 1em;}
+th{
+    text-align: left;
+    font-weight: 400;}
+td{
+    text-align: right;
+    padding: 0 1em 0 1em;}
+/*END OF LOCATION SECTION*/
+
+    
+/*ABOUT SECTION*/
+.about-container{
+    height: 300px; 
+    width: 100%;
+    border: 1px solid #ccc;
+    background-color: grey;
+    background-image: url(../images/hero-about.jpg);
+    background-repeat: no-repeat;}
+#our-story, #coffee-craft{
+    margin: 10px 0px;
+    padding: 1em 2em;}
+#our-story h1, #coffee-craft h1{
+    padding-bottom: 20px;}
+/*END OF ABOUT SECTION*/
+
+
+/*VISUAL FEEDBACK*/
+nav .logo img:hover, nav ul li:hover, 
+.promo-banner a:hover,  
+.shop-group a:hover, input[type=submit]:hover,
+.location-container a:hover, img:hover{
+    position: relative;
+    top: -2px;
+    cursor: pointer;}
+nav a:hover{
+    color: teal;
+    text-decoration: underline;
+    font-weight: 800;}
+.shop-group a:hover, input[type=submit]:hover{
+    text-decoration: underline;
+    font-weight: 800;}
+.hero-container:hover, img:hover{
+    opacity:  0.8;}
+
+/*Current location*/
+.active{
+    text-decoration: underline;
+    text-decoration-color: teal;
+    text-decoration-thickness: 20%;}
 
